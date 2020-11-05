@@ -1,6 +1,6 @@
 {% extends "landing.html" %}
 {% block content %}
-<div class="container quotes" style="margin-top: 60px;">
+<div class="container quotes" style="margin-top: 60px; color: azure;">
     <h1 class="text-center">Great Blogs</h1>
 <div class="m-5">
     <blockquote class="quote-box text-center primary-color">
@@ -28,8 +28,8 @@
                             <hr>
                             <h2><a class="card-title" href="">{{ post.title }}</a></h2>
                             <p class="card-content">{{ post.content }}</p>
-                            <button class="btn btn-outline-secondary" type="button">
-                                <a href="{{url_for('post',post_id=post.id)}}">View Page</a>
+                            <button class="btn btn-outline-secondary" type="button" style="background: black;">
+                                <a href="{{url_for('post',post_id=post.id)}}" style="text-decoration: none; color: white;">View Page</a>
                             </button>
                         </div>
                     </article>

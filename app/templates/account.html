@@ -1,12 +1,12 @@
 {% extends "landing.html" %}
 {% block content %}
-    <div class="media" style="margin-top: 60px;">
+    <div class="media" style="margin-top: 60px; color: azure;">
         <div class="media-body">
             <h2 class="account-heading">{{current_user.username}}</h2>
             <p class="text-secondary">{{current_user.email}}</p>
         </div>
     </div>
-    <div class="content-section">
+    <div class="content-section" style="color: azure;">
         <form method="POST" action="">
             {{form.hidden_tag() }}
             <fieldset class="form-group">

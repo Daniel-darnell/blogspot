@@ -1,6 +1,6 @@
 {% extends "landing.html" %}
 {% block content %}
-    <div class="content-section container myform" style="margin-top: 50px;">
+    <div class="content-section container myform" style="margin-top: 50px; color: azure;">
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
@@ -40,13 +40,13 @@
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
             <small class="text-muted ml-2">
-                <a href="#">Forgot Password?</a>
+                <a href="#" style="color: azure; font-size: 18px;">Forgot Password?</a>
             </small>
         </form>
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Need An Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
+            Need An Account? <a class="ml-2" href="{{ url_for('register') }}" style="color: azure; font-size: 18px;">Sign Up Now</a>
         </small>
     </div>
 {% endblock content %}
